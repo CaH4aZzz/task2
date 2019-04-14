@@ -9,13 +9,13 @@ public class Main {
         doStuff();
     }
 
-    static void doStuff(){
+    static void doStuff() {
         String userInput = null;
 
         do {
             Envelope envelope1 = ConsoleReader.createEnvelope();
             Envelope envelope2 = ConsoleReader.createEnvelope();
-            EnvelopeComparator.compareEnvelopes(envelope1,envelope2);
+            EnvelopeComparator.compareEnvelopes(envelope1, envelope2);
             System.out.println("Do you want to continue?");
             try {
                 userInput = reader.readLine();
