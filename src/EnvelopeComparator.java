@@ -1,6 +1,6 @@
 public class EnvelopeComparator {
 
-    static void compereEnvelopes(Envelope envelope1, Envelope envelope2){
+    static void compareEnvelopes(Envelope envelope1, Envelope envelope2){
         if (isFit(envelope1, envelope2)){
             System.out.println("Envelope1 fits in Envelope2");
         }else {

@@ -7,10 +7,9 @@ class ConsoleReader {
     private static int paramCounter = 1;
 
     static Envelope createEnvelope() {
-        if (envelopeCounter > 2) envelopeCounter = 1;
         double length = readParameterFromConsole();
         double width = readParameterFromConsole();
-        envelopeCounter++;
+        updateAndResetEnvelopeCounter();
         return new Envelope(length, width);
     }
 
@@ -44,5 +43,10 @@ class ConsoleReader {
             System.out.println("Enter width of " + envelopeCounter + " Envelope");
             paramCounter = 1;
         }
+    }
+
+    private static void updateAndResetEnvelopeCounter(){
+        envelopeCounter++;
+        if (envelopeCounter > 2) envelopeCounter = 1;
     }
 }
