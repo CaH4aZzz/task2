@@ -24,12 +24,13 @@ class ConsoleReader {
 
         } catch (IOException e) {
             System.out.println("IOException occurred");
+            System.exit(1);
         } catch (NumberFormatException e) {
             System.out.println("Wrong input type!\nPlease enter only NUMBER");
-            System.exit(0);
+            System.exit(1);
         } catch (NullParameterValueException e) {
             System.out.println("Empty string cannot be used as a parameter!\nPlease retry and enter a NUMBER");
-            System.exit(0);
+            System.exit(1);
         }
 
         return param;
