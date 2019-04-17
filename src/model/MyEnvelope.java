@@ -1,8 +1,10 @@
-public class Envelope {
+package model;
+
+public class MyEnvelope {
     private double length;
     private double width;
 
-    public Envelope(double length, double width) {
+    public MyEnvelope(double length, double width) {
         this.length = length;
         this.width = width;
     }
@@ -17,7 +19,7 @@ public class Envelope {
 
     @Override
     public String toString() {
-        return "Envelope{" +
+        return "model.MyEnvelope{" +
                 "length=" + length +
                 ", width=" + width +
                 '}';
