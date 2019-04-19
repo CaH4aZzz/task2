@@ -19,7 +19,7 @@ public class MyEnvelope {
 
     @Override
     public String toString() {
-        return "model.MyEnvelope{" +
+        return "MyEnvelope{" +
                 "length=" + length +
                 ", width=" + width +
                 '}';

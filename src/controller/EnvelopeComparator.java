@@ -4,11 +4,13 @@ import model.MyEnvelope;
 
 public class EnvelopeComparator {
 
-    static boolean compareEnvelopes(MyEnvelope envelope1, MyEnvelope envelope2) {
-        if ((envelope1.getLength() < envelope2.getLength()) && envelope1.getWidth() < envelope2.getWidth()
-                || ((envelope1.getLength() < envelope2.getWidth()) && (envelope1.getWidth() < envelope2.getLength()))) {
-            return true;
-        }
-        return false;
+    boolean isFit(MyEnvelope envelope1, MyEnvelope envelope2) {
+        double lengthEnv1 = envelope1.getLength();
+        double widthEnv1 = envelope1.getWidth();
+        double lengthEnv2 = envelope2.getLength();
+        double widthEnv2 = envelope2.getWidth();
+
+        return lengthEnv1 < lengthEnv2 && widthEnv1 < widthEnv2
+                || widthEnv1 < lengthEnv2 && lengthEnv1 < widthEnv2;
     }
 }
