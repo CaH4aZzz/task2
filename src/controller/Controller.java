@@ -37,7 +37,6 @@ public class Controller {
     }
 
     private MyEnvelope createEnvelope() throws IOException {
-
         double length = validator.getValidValue(consoleReader.readFromConsole("Please enter length for Envelope [" + envelopeCounter + "]"));
         double width = validator.getValidValue(consoleReader.readFromConsole("Please enter width for Envelope [" + envelopeCounter + "]"));
         updateAndResetEnvelopeCounter();

@@ -13,7 +13,7 @@ public class Validator {
             if (param < 0)
                 throw new IllegalArgumentException("Negative number \"" + userInput + "\" cannot be used as as parameter\nPlease enter only 1 positive number");
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Line \"" + userInput +"\" cannot be used as a parameter\nPlease enter only 1 positive number");
+            throw new NumberFormatException("Line \"" + userInput + "\" cannot be used as a parameter\nPlease enter only 1 positive number");
         }
         return param;
     }

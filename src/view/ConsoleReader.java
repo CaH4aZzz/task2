@@ -15,7 +15,7 @@ public class ConsoleReader {
     public String readFromConsole(String message) throws IOException {
         writer.printMessage(message);
         String param;
-        try{
+        try {
             param = reader.readLine();
         } catch (IOException e) {
             throw new IOException("IOException occurred while reading from console");
