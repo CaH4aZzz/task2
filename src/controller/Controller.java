@@ -7,10 +7,16 @@ import view.ConsoleWriter;
 import java.io.IOException;
 
 public class Controller {
-    private ConsoleReader consoleReader = new ConsoleReader();
-    private Validator validator = new Validator();
+    private final static int ENVELOPE_COUNTER = 2;
     private int envelopeCounter = 1;
-    private final int ENVELOPE_COUNTER = 2;
+
+    private ConsoleReader consoleReader;
+    private Validator validator;
+
+    public Controller() {
+        consoleReader = new ConsoleReader();
+        validator = new Validator();
+    }
 
     public void start() {
         ConsoleWriter consoleWriter = new ConsoleWriter();
